@@ -1,0 +1,147 @@
+<!-- Unordered HTML List
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. -->
+
+    <!-- Ordered HTML List
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: #af5e5e;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3f2525;
+}
+</style>
+</head>
+
+
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+<h2>An unordered HTML list</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!-- HTML Description Lists
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: -->
+<h2> A Description List </h2>
+<dl>
+  <dt> Coffee </dt>
+  <dd>- black and hot drink</dd>
+  <dt>Tea</dt>
+  <dd>- fav indian drink</dd>
+</dl>
+
+<!-- Unordered HTML List - Choose List Item Marker
+The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values: -->
+<h2>Example - Disc</h2>
+<ul style="list-style-type:disc";>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Example - circle</h2>
+<ul style="list-style-type:circle";>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Example - square</h2>
+<ul style="list-style-type:square";>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Example - None</h2>
+<ul style="list-style-type:None";>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- Nested HTML Lists -->
+<h2>Nested HTML Lists</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+    <ul>
+      <li>Black Tea</li>
+        <ul>
+          <li>Assam</li>
+        </ul>
+      <li>Green Tea</li>
+        <ul>
+          <li>Arunachal Pradesh</li>
+        </ul>
+    </ul>
+  <li>Cocktail</li>
+</ul>
+
+<!-- Horizontal List with CSS -->
+ <h2>Horizontal List with CSS</h2>
+
+
+
+</body>
+</html>
+
+
+<!-- HTML List Tags
+Tag	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list -->
+
+    <!-- Chapter Summary
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+Use the CSS property float:left to display a list horizontally -->

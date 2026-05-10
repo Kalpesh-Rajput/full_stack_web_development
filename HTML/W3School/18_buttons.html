@@ -1,0 +1,58 @@
+<!-- HTML Button
+The HTML <button> element defines a clickable button.
+By itself, the button does nothing until you add an action to it. -->
+
+
+<!-- Button Types
+The type attribute defines what a button does when clicked. There are three button types:
+type="button" - A normal clickable button (does nothing by default)
+type="submit" - Submits a form
+type="reset" - Resets all form fields -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.testbtn {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.testbtn:hover {
+  background-color: #059862;
+}
+</style>
+</head>
+<body>
+
+<h1>HTML Buttons</h1>
+
+<p>Default button with no styling:</p>
+<button>Click me</button>
+
+<p>Styled button:</p>
+<button class="testbtn">New Button</button>
+
+<p>A disabled button is unclickable:</p>
+<button disabled>Disabled Button</button>
+
+<p>The button uses the <code>onclick</code> attribute to run JavaScript. When you click the button, it shows an alert message.</p>
+
+<button onclick="alert('Hello!')">Click Me</button>
+
+<p>The submit button sends the form data to the server, and the reset button clears the form field (try to type your first name and press Reset Form).</p>
+
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br><br>
+
+  <button type="submit">Submit Form</button>
+  <button type="reset">Reset Form</button>
+</form>
+
+</body>
+</html>
