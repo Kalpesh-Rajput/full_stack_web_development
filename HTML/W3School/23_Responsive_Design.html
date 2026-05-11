@@ -1,7 +1,7 @@
 <!-- What is Responsive Web Design?
 Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, 
 a website, to make it look good on all devices (desktops, tablets, and phones): -->
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +9,9 @@ a website, to make it look good on all devices (desktops, tablets, and phones): 
 </head>
 <body>
 
-<!-- Responsive Text Size
+Responsive Text Size
 The text size can be set with a "vw" unit, which means the "viewport width".
-That way the text size will follow the size of the browser window:  -->
+That way the text size will follow the size of the browser window: 
   <h1 style="font-size:10vw">Hello World</h1>
   <h2>Setting the Viewport</h2>
   <p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
@@ -24,6 +24,69 @@ That way the text size will follow the size of the browser window:  -->
     <source srcset="..\images\marek-piwnicki-krsneIbgFPo-unsplash.jpg">
     <img src="..\images\steve-busch-bhBD1RMjVQ8-unsplash.jpg" alt="Flowers">
   </picture>
+
+
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Media Queries</h2>
+<p>Resize the browser window.</p>
+
+<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
 
 </body>
 </html>
