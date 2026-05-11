@@ -1,0 +1,30 @@
+<!-- What is Responsive Web Design?
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, 
+a website, to make it look good on all devices (desktops, tablets, and phones): -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale1.0">
+</head>
+<body>
+
+<!-- Responsive Text Size
+The text size can be set with a "vw" unit, which means the "viewport width".
+That way the text size will follow the size of the browser window:  -->
+  <h1 style="font-size:10vw">Hello World</h1>
+  <h2>Setting the Viewport</h2>
+  <p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
+
+  <img src="..\images\marek-piwnicki-krsneIbgFPo-unsplash.jpg" style="width:100%;height:auto;">
+
+  <picture>
+    <source srcset="..\images\marek-piwnicki-krsneIbgFPo-unsplash.jpg" media="(max-width: 600px)">
+    <source srcset="..\images\kseniia-lobko-Gryhv0_l5k8-unsplash.jpg" media="(max-width: 1500px)">
+    <source srcset="..\images\marek-piwnicki-krsneIbgFPo-unsplash.jpg">
+    <img src="..\images\steve-busch-bhBD1RMjVQ8-unsplash.jpg" alt="Flowers">
+  </picture>
+
+</body>
+</html>
+
