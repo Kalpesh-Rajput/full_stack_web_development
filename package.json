@@ -1,0 +1,25 @@
+{
+  "name": "full_stack_development",
+  "version": "1.0.0",
+  "description": "Lerning about npm",
+  "homepage": "https://github.com/Kalpesh-Rajput/full_stack_web_development#readme",
+  "bugs": {
+    "url": "https://github.com/Kalpesh-Rajput/full_stack_web_development/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalpesh-Rajput/full_stack_web_development.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "inquirer": "^14.0.2",
+    "qr-image": "^3.2.0",
+    "superheros": "^1.0.0"
+  }
+}
